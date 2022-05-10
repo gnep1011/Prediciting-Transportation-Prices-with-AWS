@@ -1,14 +1,15 @@
-# Prediciting-Transportation-Prices-with-AWS
+# Predicting-Transportation-Prices-with-AWS
 We used AWS S3, Redshift and SageMaker to predict NY taxi prices. 
 
 
-Motivation
+## Motivation   
 In recent years, ride-share apps such as Uber and Lyft have been continuously outperforming taxi companies such as the New York City Yellow Taxis. Our task in this project is to address this problem by predicting taxi prices in a similar fashion as ride-share apps in order to provide taxi companies with the opportunity to compete with these companies. These predictions can be implemented into an app which would allow users to know the price prior to ordering a ride, similar to Uber and Lyft apps. This project also demonstrates how to use AWS with big data and illustrates how to take the steps to create a predictive model in a big data environment.
 
-Technology
-We used Amazon S3 to store our data. S3 is Amazon’s unlimited cloud object storage server that allows people to store files and images. It has the advantage that it is scalable, secure, highly available and durable. We created a bucket and then took the 12 months taxi data from the website of the New York government and uploaded those files into S3. Once the data was stored, we used Redshift for data preparation. Redshift is a scaled data warehouse. It is SQL-based and is useful for large scale OLAP and BI reporting. We built a table in Redshift to integrate the 12 months data into a single table. Afterwards, we exported the merged data files back to S3. Lastly, we used Amazon SageMaker to build, train, and deploy our machine learning solutions. In Sagemaker, we take the data that we have stored in S3 and perform basic feature engineering. Post that, we train models in the processed data to predict the taxi fare prices.
+## Technology   
+We used Amazon S3 to store our data. S3 is Amazon’s unlimited cloud object storage server that allows people to store files and images. It has the advantage that it is scalable, secure, highly available and durable. We created a bucket and then took the 12 months taxi data from the website of the New York government and uploaded those files into S3. Once the data was stored, we used Redshift for data preparation. Redshift is a scaled data warehouse. It is SQL-based and is useful for large scale OLAP and BI reporting. We built a table in Redshift to integrate the 12 months data into a single table. Afterwards, we exported the merged data files back to S3. Lastly, we used Amazon SageMaker to build, train, and deploy our machine learning solutions. In Sagemaker, we took the data that we have stored in S3 and perform basic feature engineering. Post that, we trained models in the processed data to predict the taxi fare prices.
 
+## Recommendation and Limitations   
 From this analysis, we were able to predict the price of a taxi ride accurately based on a set of readily available characteristics. We would recommend taxi companies utilize tactics like ours to implement a price-before-ride product in order to better compete with the large ride-sharing competition. In addition to taxi companies, we believe any business leader, interested in Big Data predictive analytics, could utilize the above process flow for their own development. We ran in to one main limitation: AWS only offers a certain amount of storage space in their free tier. This can be mitigated by others by upgrading to tiers with more storage capacity.
 
-Video Link to our presentation
+## Video Link to our presentation   
 https://youtu.be/o_PtZhIF9k8
