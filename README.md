@@ -20,5 +20,9 @@ We used Amazon S3 to store our data. S3 is Amazon’s unlimited cloud object sto
 ## Recommendation and Limitations   
 From this analysis, we were able to predict the price of a taxi ride accurately based on a set of readily available characteristics. We would recommend taxi companies utilize tactics like ours to implement a price-before-ride product in order to better compete with the large ride-sharing competition. In addition to taxi companies, we believe any business leader, interested in Big Data predictive analytics, could utilize the above process flow for their own development. We ran into one main limitation: AWS only offers a certain amount of storage space in their free tier. This can be mitigated by others by upgrading to tiers with more storage capacity.
 
+## Dataset
+DataSet: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
+
 ## Video Link to our presentation   
 https://youtu.be/o_PtZhIF9k8
